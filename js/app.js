@@ -2,6 +2,7 @@ var app = function () {
     "use strict";
     var headerFixed, onefeatPosition, natumPosition, tweetPosition, boilerPosition, bnpPosition, ocoPosition, arlesPosition, the_id;
     var init = function () {
+
         resetPosition();
         $(function () {
             $.stellar({
@@ -39,6 +40,7 @@ var app = function () {
             }, 500)
         });
         $(document).scroll(function () {
+            console.log('scroll');
             var scroll = $(document).scrollTop();
             var projectsPosition = $("#projects").position();
             if (scroll < projectsPosition.top) {
@@ -67,7 +69,7 @@ var app = function () {
                     $("#projects").attr("class", "fixed onefeat")
                 }
             }
-        })
+        });
     }
     var resetPosition = function () {
         $('#projects .photo').height((window.innerWidth / 1.6));
@@ -80,6 +82,7 @@ var app = function () {
         bnpPosition = $("#bnp").position();
         boilerPosition = $("#boiler").position()
     }
+
     return {
         init: init
     }

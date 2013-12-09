@@ -104,7 +104,7 @@ body {
       height: 30px;
       text-decoration: none; }
     #header .left .btn:hover {
-      background-position: 0 -41px;
+      /*background-position: 0 -41px;*/
       -webkit-text-shadow: 0px 1px -1px #333333;
       -moz-text-shadow: 0px 1px -1px #333333;
       -ms-text-shadow: 0px 1px -1px #333333;
