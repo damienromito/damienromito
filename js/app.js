@@ -40,7 +40,6 @@ var app = function () {
             }, 500)
         });
         $(document).scroll(function () {
-            console.log('scroll');
             var scroll = $(document).scrollTop();
             var projectsPosition = $("#projects").position();
             if (scroll < projectsPosition.top) {
